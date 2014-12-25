@@ -1,0 +1,114 @@
+* {
+	margin: 0;
+	padding: 0;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.grid {
+	margin: auto;
+	width: 100%;
+	max-width: 1000px;
+	min-width: 320px;
+	display: -webkit-flex;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	flex: 0 0 960px;
+}
+
+.grid img{
+	max-width: 100%;
+}
+
+.middle{
+	align-items: center;
+}
+
+.stretch{
+	align-items: stretch;
+}
+
+.start{
+	align-items: flex-start;
+}
+
+[class^="col"] img{
+	display: inline-block;
+	max-width: 100%;
+}
+
+.col1 {
+	flex: 0 0 80px;
+}
+.col2 {
+	flex: 0 0 160px;
+}
+
+.col2-5{
+	flex: 0 1 200px;
+}
+
+.col3 {
+	flex: 0 0 240px;
+}
+.col3-5{
+	flex: 0 0 280px;
+}
+.col4 {
+	flex: 0 0 320px;
+}
+.col5 {
+	flex: 0 0 400px;
+}
+.col6 {
+	flex: 0 0 480px;
+}
+.col7 {
+	flex: 0 0 560px;
+}
+.col8 {
+	flex: 0 0 640px;
+}
+.col9 {
+	flex: 0 0 720px;
+}
+.col10 {
+	flex: 0 0 800px;
+}
+.col11 {
+	flex: 0 0 880px;
+}
+.col12 {
+	flex: 0 0 100%;
+}
+
+@media all and (max-width: 960px) {
+
+	.col9, .col10, .col11 {
+		flex: 1 1 100%;
+	}
+
+	.grid{
+		justify-content: space-around;
+		flex: 0 0 auto;
+		padding: 0 10px;
+	}
+
+}
+
+@media all and (max-width: 768px) {
+
+	.col7, .col8 {
+		flex: 1 1 100%;
+	}
+}
+
+@media all and (max-width: 480px) {
+
+	.col5, .col6 {
+		flex:  1 1 100%;
+	}
+
+}
