@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>flexbox 960 grid</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="flex960.css"/>
+
+    <style>
+        body{
+            font-family: 'Tahoma', 'Helvetica', sans-serif;
+            color: #444444;
+            background: #eee;
+        }
+
+        header, .main, footer{
+            min-width: 320px;
+            overflow: hidden;
+        }
+
+        .grid{
+            margin-bottom: 15px;
+        }
+
+        [class^="col"]{
+            background: #f5d7f5;
+            padding: 25px;
+            margin-bottom: 40px;
+        }
+
+        h2, h3, p, img{
+            margin-bottom: 15px;
+        }
+    </style>
+</head>
+<body>
+<header class="grid">
+    <h1 class="col3">logo</h1>
+    <p class="col3">slogan text</p>
+    <div class="col3">
+        <p>telephone: <br/>
+            0-800-000-900-99</p>
+    </div>
+</header>
+<div class="main">
+    <section class="grid">
+        <h2 class="col12">Examples 1</h2>
+
+        <div class="col11"><h3>Lorem ipsum dolor sit amet</h3>
+
+            <p>consectetur adipiscing elit. Sed in orci ullamcorper, sagittis
+                tellus a, blandit est. Integer ut erat sed neque sollicitudin semper at id velit. Maecenas ornare, ipsum
+                non
+                hendrerit vehicula, dui turpis egestas nisi, eget facilisis sapien risus at justo. Curabitur dolor
+                massa,
+                posuere ac sodales ut, finibus sed mauris. Aliquam hendrerit luctus risus sit amet feugiat. Aliquam
+                interdum
+                magna ut aliquet malesuada. Morbi tristique urna ut metus eleifend, ac euismod lectus hendrerit. Vivamus
+                vel
+                tellus dui. Integer egestas nisl id ante ullamcorper, vitae condimentum velit rhoncus. Maecenas id
+                pharetra
+                erat, vel imperdiet augue. Etiam nec sem sagittis, venenatis sapien quis, mollis nisi. Donec sodales id
+                tellus gravida semper. Mauris pharetra eget arcu ut dapibus. Aenean quis feugiat dui.</p>
+        </div>
+        <div class="col1">
+            <img src="http://lorempixel.com/g/400/200/" alt=""/>
+        </div>
+        <div class="col10">
+            <h3>Lorem ipsum dolor sit amet</h3>
+
+            <p>Nam nec dictum neque. Nullam feugiat sem nec hendrerit malesuada. Curabitur urna felis, laoreet sit amet
+                mauris vel, euismod suscipit nibh. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum
+                justo
+                ante, congue quis magna eget, sodales dignissim dolor.</p>
+        </div>
+        <div class="col2">
+            <img src="http://lorempixel.com/g/400/200/" alt=""/>
+        </div>
+        <div class="col9">
+            <h3>Lorem ipsum dolor sit amet</h3>
+
+            <p>Nam nec dictum neque. Nullam feugiat sem nec hendrerit malesuada. Curabitur urna felis, laoreet sit amet
+                mauris vel, euismod suscipit nibh. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum
+                justo
+                ante, congue quis magna eget, sodales dignissim dolor.</p>
+        </div>
+        <div class="col3">
+            <img src="http://lorempixel.com/400/200/sports/" alt=""/>
+        </div>
+        <div class="col8">
+            <h3>Lorem ipsum dolor sit amet</h3>
+
+            <p>Nam nec dictum neque. Nullam feugiat sem nec hendrerit malesuada. Curabitur urna felis, laoreet sit amet
+                mauris vel, euismod suscipit nibh. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum
+                justo
+                ante, congue quis magna eget, sodales dignissim dolor.</p>
+        </div>
+        <div class="col4">
+            <p>Nam nec dictum neque. Nullam feugiat sem nec hendrerit malesuada. Curabitur urna felis, laoreet sit amet
+                mauris vel, euismod suscipit nibh. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum
+                justo
+                ante, congue quis magna eget, sodales dignissim dolor.</p>
+        </div>
+        <div class="col7">
+            <p>Nam nec dictum neque. Nullam feugiat sem nec hendrerit malesuada. Curabitur urna felis, laoreet sit amet
+                mauris vel, euismod suscipit nibh. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum
+                justo
+                ante, congue quis magna eget, sodales dignissim dolor.</p>
+        </div>
+        <div class="col5">
+            <img src="http://lorempixel.com/400/200/sports/" alt=""/>
+        </div>
+        <div class="col6">
+            <p>Nam nec dictum neque. Nullam feugiat sem nec hendrerit malesuada. Curabitur urna felis, laoreet sit amet
+                mauris vel, euismod suscipit nibh. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum
+                justo
+                ante, congue quis magna eget, sodales dignissim dolor.</p>
+        </div>
+        <div class="col6">
+            <p>Nam nec dictum neque. Nullam feugiat sem nec hendrerit malesuada. Curabitur urna felis, laoreet sit amet
+                mauris vel, euismod suscipit nibh. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum
+                justo
+                ante, congue quis magna eget, sodales dignissim dolor.</p>
+
+            <img src="http://lorempixel.com/400/200/sports/" alt=""/>
+        </div>
+    </section>
+    <section class="grid middle">
+        <h2 class="col12">Examples 2</h2>
+
+        <div class="col3">
+            <h3>Lorem ipsum</h3>
+
+            <p>Nam nec dictum neque. Nullam feugiat sem nec hendrerit malesuada. .</p>
+        </div>
+        <div class="col3">
+            <h3>Lorem ipsum</h3>
+
+            <p>Nam nec dictum neque.</p>
+        </div>
+        <div class="col3">
+            <h3>lorem</h3>
+
+            <p>dui turpis egestas nisi, eget facilisis sapien risus at justo.</p>
+        </div>
+        <div class="col3">
+            <h3>lorem</h3>
+
+            <p>dui turpis egestas nisi, eget facilisis sapien risus at justo.
+                dui turpis egestas nisi, eget facilisis sapien risus at justo.</p>
+        </div>
+    </section>
+    <section class="grid start">
+        <div class="col4">
+            <h3>image 1</h3>
+
+            <img src="http://lorempixel.com/g/400/200/" alt=""/>
+        </div>
+        <div class="col4">
+            <h3>image 2</h3>
+
+            <img src="http://lorempixel.com/g/400/200/" alt=""/>
+        </div>
+        <div class="col4">
+            <h3>image 3</h3>
+
+            <img src="http://lorempixel.com/g/400/200/" alt=""/>
+
+            <p>dui turpis egestas nisi, eget facilisis sapien risus at justo.</p>
+        </div>
+    </section>
+    <section class="grid">
+        <h2 class="col12">Examples 3</h2>
+
+        <div class="col1"></div>
+        <div class="col11"></div>
+        <div class="col2"></div>
+        <div class="col10"></div>
+        <div class="col3"></div>
+        <div class="col9"></div>
+        <div class="col4"></div>
+        <div class="col8"></div>
+        <div class="col5"></div>
+        <div class="col7"></div>
+        <div class="col6"></div>
+        <div class="col6"></div>
+    </section>
+</div>
+<footer class="grid">
+    <p class="col3">footer logo here</p>
+    <p class="col3">Copyrights 2014</p>
+</footer>
+</body>
+</html>
